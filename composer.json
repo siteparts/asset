@@ -1,0 +1,34 @@
+{
+	"name": "siteparts/asset",
+	"description": "Generate cache busted asset url",
+	"license": "BSD-3-Clause",
+	"keywords": [
+		"helper",
+		"asset",
+		"url"
+	],
+	"homepage": "https://github.com/siteparts/asset",
+	"support": {
+		"issues": "https://github.com/siteparts/asset/issues",
+		"source": "https://github.com/siteparts/asset"
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"extra": {
+		"laminas": {
+			"config-provider": "SiteParts\\Asset\\ConfigProvider"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"SiteParts\\Asset\\": "src/"
+		}
+	},
+	"require": {
+		"php": "^7.1"
+	},
+	"suggest": {
+		"psr/container": "^1.0 to use the factory"
+	}
+}
