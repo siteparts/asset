@@ -1,6 +1,6 @@
 {
 	"name": "siteparts/asset",
-	"description": "Generate cache busted asset url",
+	"description": "Generate cache busted web assets URLs",
 	"license": "BSD-3-Clause",
 	"keywords": [
 		"helper",

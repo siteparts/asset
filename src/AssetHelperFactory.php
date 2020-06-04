@@ -8,7 +8,7 @@ use Psr\Container\ContainerInterface;
 
 class AssetHelperFactory
 {
-	public function __invoke(ContainerInterface $container)
+	public function __invoke(ContainerInterface $container) : AssetHelper
 	{
 		$config = $container->has('config') ? $container->get('config') : [];
 		$assetConfig = $config['asset'] ?? [];

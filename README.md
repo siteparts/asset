@@ -1,6 +1,6 @@
 # Asset
 
-*Generate cache busted asset url.*
+*Generate cache busted web assets URLs.*
 
 ## Installation
 
@@ -26,7 +26,7 @@ project-root
 ...
 ```
 
-Create the AssetHelper and you can start generating cache busted asset urls:
+Create the AssetHelper and you can start generating cache busted assets URLs:
 
 ```php
 use SiteParts\Asset\AssetHelper;
