@@ -10,11 +10,18 @@ class AssetHelperFactory
 {
 	public function __invoke(ContainerInterface $container) : AssetHelper
 	{
+		/**
+		 * @var array{
+		 *     base_path?: string,
+		 *     asset?: array{
+		 *         local_path?: string,
+		 *     },
+		 * } $config
+		 */
 		$config = $container->has('config') ? $container->get('config') : [];
-		$assetConfig = $config['asset'] ?? [];
 
 		return new AssetHelper(
-			$assetConfig['local_path'] ?? '.',
+			$config['asset']['local_path'] ?? '.',
 			$config['base_path'] ?? '/'
 		);
 	}

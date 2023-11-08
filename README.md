@@ -23,10 +23,13 @@ project-root
       |- style.css
    |- img
       |- image.png
+   |- index.php
+|- src
+|- templates
 ...
 ```
 
-Create the AssetHelper and you can start generating cache busted assets URLs:
+Create the AssetHelper and start generating cache busted assets URLs:
 
 ```php
 use SiteParts\Asset\AssetHelper;
@@ -45,3 +48,5 @@ $styleUrl = $assetHelper("css/style.css");
 $imageUrl = $assetHelper("img/image.png");
 // $imageUrl contains e.g. "/app/img/image.png?v=1591057923"
 ```
+
+For use with a PSR-11 container, you can also use the `ConfigProvider` supplied.
